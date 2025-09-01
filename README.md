@@ -13,24 +13,46 @@ A FastAPI-based RAG (Retrieval-Augmented Generation) service that answers questi
 - 📊 Structured logging and error handling
 - 🚢 Ready for Railway/Render deployment
 
-## Quick Start
+## Installation
 
+### 1. Install uv (if not already installed)
 ```bash
-# 1. Setup (installs uv + dependencies)
-./scripts/dev.sh setup
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-# 2. Add your OPENAI_API_KEY to .env file
+### 2. Clone and setup
+```bash
+git clone https://github.com/YOUR_USERNAME/Portfolio-RAG-API.git
+cd Portfolio-RAG-API
+```
 
-# 3. Start development server
+### 3. Install dependencies
+```bash
+uv sync
+```
+
+### 4. Configure environment
+```bash
+cp .env.example .env
+# Add your OPENAI_API_KEY to .env file
+```
+
+### 5. Start the server
+```bash
+# Using uv
+uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# Or using the dev script
 ./scripts/dev.sh
 ```
 
-### Commands
+## Quick Commands
 ```bash
-./scripts/dev.sh setup    # Setup project
+./scripts/dev.sh setup    # Full setup (installs uv if needed)
 ./scripts/dev.sh          # Start dev server  
 ./scripts/dev.sh test     # Run validation
 uv add package-name       # Add dependency
+uv sync                   # Update dependencies
 ```
 
 ## API Endpoints
