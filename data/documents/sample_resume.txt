@@ -1,0 +1,50 @@
+JAGONMOY DEY
+Software Engineer
+
+CONTACT:
+Email: jagonmoy.dey@example.com
+Phone: +1-XXX-XXX-XXXX
+GitHub: github.com/jagonmoy
+Portfolio: jagonmoy.github.io
+
+SUMMARY:
+Experienced Software Engineer with 2.5+ years of experience in full-stack development, 
+specializing in React, Node.js, Python, and AI/LLM applications. Strong background in 
+building scalable web applications and implementing machine learning solutions.
+
+TECHNICAL SKILLS:
+- Frontend: React, Next.js, TypeScript, JavaScript, HTML5, CSS3
+- Backend: Node.js, Python, FastAPI, Express.js
+- Databases: PostgreSQL, MongoDB, ChromaDB
+- AI/ML: LangChain, LlamaIndex, OpenAI API, TensorFlow
+- Cloud: AWS, Railway, Render
+- Tools: Git, Docker, VS Code
+
+EXPERIENCE:
+
+Software Engineer | Tech Company | 2022-Present
+- Developed and maintained React-based web applications serving 10k+ users
+- Built RESTful APIs using Node.js and Python FastAPI
+- Implemented AI-powered features using LangChain and OpenAI API
+- Collaborated with cross-functional teams using Agile methodologies
+
+Junior Developer | Startup Company | 2021-2022
+- Created responsive web applications using React and TypeScript
+- Worked on database design and optimization with PostgreSQL
+- Participated in code reviews and maintained 95%+ test coverage
+
+EDUCATION:
+Bachelor of Science in Computer Science
+University Name | 2017-2021
+GPA: 3.8/4.0
+
+PROJECTS:
+1. RAG-based Portfolio API - FastAPI service with LlamaIndex for document querying
+2. E-commerce Platform - Full-stack React/Node.js application
+3. AI Chat Application - Real-time chat with OpenAI integration
+4. Bengali Speaker Diarization - ML project for audio processing (Undergraduate Thesis)
+
+ACHIEVEMENTS:
+- Competitive Programming: Active on Codeforces (Rating: 1400+)
+- Published research paper on Bengali Speaker Diarization
+- Led team of 3 developers in hackathon, winning 2nd place

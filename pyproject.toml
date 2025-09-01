@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "portfolio_rag_api"
+version = "0.1.0"
+description = "RAG API service for portfolio queries using FastAPI and LlamaIndex"
+authors = [{name = "Jagonmoy Dey"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "llama-index>=0.9.13",
+    "llama-index-vector-stores-chroma>=0.1.4",
+    "chromadb>=0.4.18",
+    "pypdf>=3.17.1",
+    "python-multipart>=0.0.6",
+    "requests>=2.31.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "python-dotenv>=1.0.0",
+    "aiofiles>=23.2.1",
+    "gitpython>=3.1.40",
+    "beautifulsoup4>=4.12.2",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1", 
+    "ruff>=0.1.6",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "W", "F", "I"]
