@@ -5,19 +5,16 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import router
-from app.core.config import get_settings
+from app.routes.routes import router
 from app.core.logging import setup_logging
 
 load_dotenv()
 setup_logging()
 logger = logging.getLogger(__name__)
 
-settings = get_settings()
-
 app = FastAPI(
-    title="Portfolio RAG API",
-    description="RAG API service for answering questions about Jagonmoy Dey's professional background",
+    title="Minimal RAG API",
+    description="Simple RAG API for learning LlamaIndex",
     version="1.0.0",
 )
 
@@ -33,7 +30,7 @@ app.include_router(router, prefix="/api/v1")
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "service": "portfolio-rag-api"}
+    return {"status": "healthy", "service": "minimal-rag-api"}
 
 if __name__ == "__main__":
     import uvicorn
